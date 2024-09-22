@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contrôle ELK-BLEDOM</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Contrôle des Appareils ELK-BLEDOM</h1>
+    <button id="searchBtn">Rechercher ELK-BLEDOM</button>
+    <div id="status"></div>
+    
+    <div id="devicesList"></div> <!-- Liste des appareils connectés -->
+
+    <input type="color" id="colorPicker" />
+    <button id="setColorBtn">Définir la Couleur</button>
+    
+    <select id="effectSelect">
+        <option value="">Sélectionnez un effet</option>
+        <option value="red">Rouge</option>
+        <option value="blue">Bleu</option>
+        <option value="green">Vert</option>
+        <option value="cyan">Cyan</option>
+        <option value="yellow">Jaune</option>
+        <option value="magenta">Magenta</option>
+        <option value="white">Blanc</option>
+        <option value="jump_rgb">Saut RGB</option>
+        <option value="jump_rgbycmw">Saut RGBCMYW</option>
+        <option value="gradient_rgb">Gradient RGB</option>
+        <option value="gradient_rgbycmw">Gradient RGBCMYW</option>
+        <option value="blink_rgbycmw">Clignotement RGBCMYW</option>
+    </select>
+    <button id="setEffectBtn">Définir l'Effet</button>
+
+    <input type="range" id="intensityRange" min="0" max="100" value="100">
+    <span id="intensityValue">100%</span> <!-- Affichage du pourcentage -->
+    
+    <script src="script.js"></script>
+</body>
+</html>
