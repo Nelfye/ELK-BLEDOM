@@ -92,7 +92,7 @@ function setModeEffect(characteristic, effect) {
     } else {
         console.error(effect + " is not a valid effect");
     }
-    document.getElementById("effectSelect").value = "null";
+    document.getElementById("effectSelect").value = "";
 }
 
 function sendCommand(characteristic, command) {
