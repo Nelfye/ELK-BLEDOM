@@ -1,0 +1,98 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: left; /* Alignement à gauche */
+    margin: 20px;
+    background-color: #1a1a1a; /* Gris très foncé pour un effet moderne */
+    color: #e91e63; /* Couleur de texte plus vive */
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 2.5em; /* Taille du titre */
+    color: #ff4081; /* Couleur du titre */
+    text-shadow: 1px 1px 5px rgba(255, 20, 147, 0.5); /* Ombre pour le titre */
+}
+
+#status {
+    margin-top: 20px;
+    font-weight: bold; /* Met le texte en gras */
+    color: #f8bbd0; /* Couleur du statut */
+}
+
+input[type="color"] {
+    margin: 10px;
+    border: none; /* Supprime la bordure par défaut */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Curseur en main */
+    background-color: #ff4081; /* Couleur de fond verte */
+    width: 80px; /* Largeur du bouton de couleur */
+    height: 40px; /* Hauteur du bouton de couleur */
+    padding: 0; /* Supprime le padding */
+}
+
+
+button {
+    background-color: #ff4081; /* Couleur de fond des boutons */
+    color: white; /* Couleur du texte */
+    border: none; /* Supprime la bordure */
+    padding: 12px 25px; /* Padding interne */
+    margin: 10px; /* Espace autour des boutons */
+    border-radius: 25px; /* Coins arrondis */
+    cursor: pointer; /* Curseur en main */
+    transition: background-color 0.3s, transform 0.2s; /* Animation pour le survol */
+}
+
+button:hover {
+    background-color: #e91e63; /* Couleur au survol */
+    transform: scale(1.05); /* Effet d'agrandissement au survol */
+}
+
+select {
+    padding: 10px; /* Padding interne pour le sélecteur */
+    border-radius: 5px; /* Coins arrondis */
+    margin: 10px; /* Espace autour */
+    background-color: #333; /* Fond pour le sélecteur */
+    color: white; /* Couleur du texte */
+    border: 1px solid #ff4081; /* Bordure */
+}
+
+div {
+    margin: 20px 0; /* Espace autour de la section */
+}
+
+input[type="range"] {
+    width: 50%; /* Réduit la largeur du slider */
+    margin: 10px 0; /* Espace au-dessus et en dessous */
+    -webkit-appearance: none; /* Supprime le style par défaut */
+    background: #444; /* Couleur de fond de la barre */
+    border-radius: 10px; /* Arrondit la barre */
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Supprime le style par défaut */
+    appearance: none; /* Supprime le style par défaut */
+    width: 20px; /* Largeur du curseur */
+    height: 20px; /* Hauteur du curseur */
+    border-radius: 50%; /* Arrondit le curseur */
+    background: #ff4081; /* Couleur du curseur */
+    cursor: pointer; /* Curseur en main */
+    transition: background-color 0.3s; /* Animation au survol */
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+    background-color: #e91e63; /* Couleur au survol */
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 20px; /* Largeur du curseur */
+    height: 20px; /* Hauteur du curseur */
+    border-radius: 50%; /* Arrondit le curseur */
+    background: #ff4081; /* Couleur du curseur */
+    cursor: pointer; /* Curseur en main */
+}
+
+#intensityValue {
+    font-weight: bold; /* Met le texte du pourcentage en gras */
+    margin-top: -10px; /* Espace au-dessus pour le rapprocher du slider */
+    color: #ff4081; /* Couleur du pourcentage */
+}
